@@ -1,0 +1,8 @@
+<div class="content">
+    <div class="item"
+         *ngFor="let sideNavBarItem of sideNavBarItems"
+         [ngClass]="{'active': isSideNavBarItemActive(sideNavBarItem)}"
+         (click)="onClick(sideNavBarItem)">
+        <div>{{ sideNavBarItem.name }}</div>
+    </div>
+</div>
